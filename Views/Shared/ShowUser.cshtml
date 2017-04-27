@@ -1,0 +1,36 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css" rel="stylesheet" integrity="sha384-RpX8okQqCyUNG7PlOYNybyJXYTtGQH+7rIKiVvg1DLg6jahLEk47VvpUyS+E2/uJ" crossorigin="anonymous">
+<div class="container">
+  <div class="row">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/dash">Bright Ideas</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="row">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Alias</th>
+        <th>Email</th>
+        <th>Total Number of Posts</th>
+        <th>Total Number of Likes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>@ViewBag.User.FirstName</td>
+        <td>@ViewBag.User.Alias</td>
+        <td>@ViewBag.User.Email</td>
+        <td>@ViewBag.User.Posts.Count</td>
+        <td>@ViewBag.User.LikedPosts.Count</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
